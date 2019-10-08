@@ -1,0 +1,198 @@
+* {
+	font-family: 'Lexend Deca', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.banner {
+	height: 66vh;
+	width: 100%;
+	background: linear-gradient( rgba(0, 20, 50, 0.6), rgba(0, 20, 50, 0.6)), url('./images/image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	perspective: 500px;
+}
+
+.words {
+	font-size: 1.8vw;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+h1, h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.grid-container {
+	background-color: #f5f1e4;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.grid-item {
+	text-align: center;
+	padding: 25px;
+
+}
+
+.projectheader {
+	background-color: #f5f1e4;
+	margin: auto;
+	text-align: center;
+	padding: 40px;
+}
+
+.project {
+	background-color: #f5f1e4;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.projectitem {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.profilepic {
+	width: 140px;
+	padding-right: 20px;
+	float: left;
+}
+
+.logo {
+	width: 35px;
+	padding: 5px;
+	border-radius: 10%;
+}
+
+.logo:hover {
+	width: 50px;
+	padding: 0px;
+}
+
+.smalllogo {
+	width: 18px;
+	padding: 2px;
+}
+
+.para {
+	font-size: 1.1em;
+}
+
+.footer {
+	background-color: #f5f1e4;
+	margin: auto;
+	padding-top: 50px;
+	text-align: center;	
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltiptext {
+	font-size: 0.8em;
+	font-weight: normal;
+	display: none;
+}
+
+.description {
+	display: block;
+	font-size: 0.8em;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	font-weight: normal;
+}
+
+.tooltip:hover > .tooltiptext {
+	display: block;
+}
+
+@media only screen and (max-width: 960px) {
+	.words {
+		font-size: 2.2vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.project {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		padding: 0;
+		text-align: center;
+	}
+	.grid-container {
+		grid-template-columns: 100%;
+		padding: 0;
+
+	}
+	.description {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	.words {
+		font-size: 2.5vw;
+	}
+	.project {
+		display: grid;
+		grid-template-columns: auto;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.words {
+		font-size: 3.5vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.grid-container {
+		grid-template-columns: auto;
+		grid-auto-flow: row dense;
+	}
+
+	.words {
+		font-size: 5.5vw;
+		padding: 0;
+		padding: 25px;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	.para {
+		width: 100%;
+	}
+
+	.grid-container {
+		grid-template-columns: 100%;
+		padding: 0;
+	}
+
+	.profilepic {
+		width: 50%;
+		padding-left: 25%;
+		padding-right: 25%;
+		padding-bottom: 30px;
+	}
+}
