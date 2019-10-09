@@ -90,6 +90,8 @@ h1, h3 {
 
 .para {
 	font-size: 1.1em;
+	max-width: 550px;
+	margin: auto;
 }
 
 .footer {
@@ -117,24 +119,13 @@ h1, h3 {
 	padding-right: 30px;
 	padding-top: 5px;
 	font-weight: normal;
+	max-width: 300px;
+	margin: auto;
 }
 
 .tooltip:hover > .tooltiptext {
 	display: block;
 }
-
-
-@media only screen and (min-width: 1400px) {
-	.project {
-		padding-left: 300px;
-		padding-right: 300px;
-	}
-
-	.para {
-		font-size: 1.3em;
-	}
-}
-
 
 @media only screen and (max-width: 960px) {
 	.words {
